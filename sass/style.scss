@@ -699,6 +699,11 @@ h1, h2, h3, h4, h5, h6, figure {
 	}
 }
 
+::selection{
+	background: $brand-bg-dark;
+	color: $brand-white;
+}
+
 .timeline-body > p + p {
   margin-top: 5px;
 }
