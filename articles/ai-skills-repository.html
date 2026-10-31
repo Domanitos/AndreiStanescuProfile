@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Generating an AI Skills Repository for Your Team - Andrei Stanescu</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Our prompts started as personal notes scattered across editors. Here's how we turned them into a shared, versioned skills repository the whole team owns." />
+
+	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="../css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="../css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="../css/bootstrap.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="../css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="../js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="../js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+
+	<div class="fh5co-loader"></div>
+
+	<div id="page">
+
+	<div id="fh5co-blog">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>Generating an AI Skills Repository for Your Team</h2>
+					<span class="company">Oct 31, 2026 &middot; Andrei Stanescu &middot; 6 min read</span>
+				</div>
+			</div>
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 article-body">
+					<p>A year ago, every engineer on my team used AI assistance differently. Some had personal prompt collections saved in Notion, others had text files buried in their home folders, and the most effective workflows lived entirely in people&rsquo;s heads. Two engineers could ask the same assistant for the same task and get wildly different results, and the difference was invisible tribal knowledge. This post is about how we turned that scattered know-how into a shared AI skills repository: a versioned, reviewed, team-owned library of prompts and skills that has become one of the most valuable assets we&rsquo;ve built.</p>
+
+					<h3>What we mean by a &ldquo;skill&rdquo;</h3>
+					<p>For us, a skill is a named, documented, reusable unit of AI workflow. Sometimes it&rsquo;s a prompt template, sometimes a rule file the assistant always loads, sometimes a small script paired with instructions. The content varies: how we structure a .NET microservice, our conventions for writing tests, the checklist the assistant should walk through before proposing a refactoring, how we want PR descriptions generated. What makes it a skill rather than a prompt is the packaging: it has an owner, a version, a purpose, and a place in a repository everyone can see.</p>
+					<p>The distinction matters because prompts are personal and skills are institutional. A prompt helps one engineer today. A skill encodes the team&rsquo;s judgement so that the next engineer, or the same engineer six months from now, doesn&rsquo;t have to rediscover it.</p>
+
+					<h3>The anatomy of a good skill</h3>
+					<p>We didn&rsquo;t get this right on the first attempt. The skills that survived and earned adoption share a shape, and it&rsquo;s worth spelling out because most prompt collections online don&rsquo;t have it:</p>
+					<p>&bull; Context: when to use the skill, and just as importantly, when not to.<br />
+					&bull; Instructions: explicit steps, not vibes. If the skill says &ldquo;make it clean&rdquo;, it will produce whatever &ldquo;clean&rdquo; means to a language model this week.<br />
+					&bull; Constraints: our standards, naming rules, patterns we forbid, quality gates the output must pass.<br />
+					&bull; Examples: links to real code in our repositories, not generic samples. Few-shot examples from our own codebase are the single highest-leverage part of every skill we have.<br />
+					&bull; Metadata: an owner, a last-reviewed date, and the problem the skill solves.</p>
+
+					<h3>How we bootstrapped it</h3>
+					<p>The repository started with a harvest. We ran a session where everyone dumped their personal prompts, notes, and habits onto a shared board, then clustered them by workflow. The first surprise was the duplication: five people had independently solved the same code-review-summary problem in five different ways. The second surprise was the gaps: nobody had written down our most valuable knowledge because it felt obvious to the people who held it.</p>
+					<p>We picked the five most repeated workflows and turned those into the founding skills, written properly with the anatomy above. Five was deliberate: enough to demonstrate value, few enough that we could hold a quality bar. Everything else waited in a backlog until it earned a slot. That backlog became our roadmap, and the rule that a new skill must replace or absorb an existing one kept the library from becoming a junk drawer.</p>
+
+					<h3>Treat it like code, because it is code</h3>
+					<p>Once the repository existed, the practices were obvious because we already had them: skills change through pull requests, they go through review, they have owners, and they get deprecated rather than deleted. A prompt that encodes a design decision is a historical artifact; six months later, being able to read what the team believed and why is worth more than a tidy folder.</p>
+					<p>The review standards apply to skills with one addition: a skill change must be exercised before approval. We don&rsquo;t merge prompt edits based on how they read; the author runs the skill on a real task and links the output. Skills that nobody can demonstrate working don&rsquo;t ship, and skills that rot get flagged by their last-reviewed date.</p>
+
+					<h3>Making it stick</h3>
+					<p>A library nobody uses is just well-organised neglect. Three things drove adoption for us. First, the skills are wired into the tools: the assistants load the relevant rules automatically, so using the library is the default rather than a lookup. Second, onboarding runs through it: new engineers read the skills repository in their first week, which doubles as the fastest tour of &ldquo;how we work here&rdquo; that we&rsquo;ve ever had. Third, we made contribution visible and rewarded: the engineer whose skill gets absorbed by the whole team gets the same recognition as the author of a core service.</p>
+
+					<h3>Anti-patterns we learned the hard way</h3>
+					<p>&bull; The prompt graveyard: skills that nobody trusts or maintains. The last-reviewed date exists to make this visible instead of silent.<br />
+					&bull; Mega-skills: one giant prompt that tries to do everything. They&rsquo;re brittle, and when output quality drops nobody knows which instruction caused it.<br />
+					&bull; Hoarding: when an engineer&rsquo;s private prompts are better than the shared ones, that&rsquo;s an incentive problem, not a tooling problem. We fixed it by making repository contributions a visible achievement, not an extra chore.<br />
+					&bull; Copying skill libraries from the internet wholesale. Borrowed conventions teach the assistant someone else&rsquo;s standards. Start from your own code and your own problems.</p>
+
+					<p>The measurable outcomes: consistency. Two engineers asking for the same class of help now get answers grounded in the same standards, which is a large part of how we doubled our PR rate without doubling our review burden. The unmeasurable but more valuable outcome: the repository has become the clearest written expression of what this team believes good engineering looks like. That&rsquo;s not a prompt collection anymore. That&rsquo;s culture, in a format an assistant can read.</p>
+
+					<p><a href="../articles.html">&larr; Back to all articles</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="fh5co-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<p>&copy; 2026 Andrei Stanescu. All Rights Reserved.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
+	</div>
+
+	<!-- jQuery -->
+	<script src="../js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="../js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="../js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="../js/jquery.waypoints.min.js"></script>
+	<!-- Stellar Parallax -->
+	<script src="../js/jquery.stellar.min.js"></script>
+	<!-- Easy PieChart -->
+	<script src="../js/jquery.easypiechart.min.js"></script>
+
+	<!-- Main -->
+	<script src="../js/main.js"></script>
+
+	</body>
+</html>
