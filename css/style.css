@@ -318,10 +318,8 @@ h1, h2, h3, h4, h5, h6, figure {
   right: 0;
   background: rgba(65, 210, 243, 0.9);
 }
-#fh5co-blog {
-  background-image: url(../images/cover_bg_4.jpg);
-}
-#fh5co-work {
+#fh5co-blog,
+#fh5co-skills {
   background-image: url(../images/cover_bg_5.jpg);
 }
 .fh5co-bg-dark .fh5co-heading h2 {
