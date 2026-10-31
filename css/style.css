@@ -650,6 +650,21 @@ h1, h2, h3, h4, h5, h6, figure {
   font-size: 13px;
 }
 
+#fh5co-recommendations {
+  padding: 4em 0;
+}
+@media screen and (max-width: 768px) {
+  #fh5co-recommendations {
+    padding: 2.5em 0;
+  }
+}
+#fh5co-recommendations .fh5co-heading {
+  margin-bottom: 2.5em;
+}
+#fh5co-recommendations .rec {
+  margin-bottom: 15px;
+}
+
 .timeline-body > p + p {
   margin-top: 5px;
 }
