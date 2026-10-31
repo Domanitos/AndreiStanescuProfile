@@ -861,8 +861,23 @@ h1, h2, h3, h4, h5, h6, figure {
 	.fh5co-heading{
 		margin-bottom: 2.5em;
 	}
+	.row{
+		display: flex;
+		flex-wrap: wrap;
+	}
 	.fh5co-blog{
 		margin-bottom: 10px;
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		.blog-text{
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			.stuff{
+				margin-top: auto;
+			}
+		}
 	}
 	.btn-primary{
 		background: $brand-white;
