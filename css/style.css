@@ -282,7 +282,6 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-resume,
 #fh5co-skills,
 #fh5co-recommendations,
-#fh5co-started,
 #fh5co-work,
 #fh5co-blog,
 #fh5co-pricing,
@@ -295,17 +294,12 @@ h1, h2, h3, h4, h5, h6, figure {
   #fh5co-resume,
   #fh5co-skills,
   #fh5co-recommendations,
-  #fh5co-started,
   #fh5co-work,
   #fh5co-blog,
   #fh5co-pricing,
   #fh5co-contact {
     padding: 3em 0;
   }
-}
-
-#fh5co-started {
-  border-bottom: none;
 }
 
 .fh5co-bg-dark {
@@ -883,36 +877,6 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 }
 
-#fh5co-started {
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  position: relative;
-  float: left;
-  width: 100%;
-}
-#fh5co-started .fh5co-heading {
-  margin-bottom: 0;
-}
-#fh5co-started .fh5co-heading h2 {
-  color: #000;
-  margin-bottom: 20px !important;
-}
-#fh5co-started .fh5co-heading p {
-  color: #828282;
-}
-#fh5co-started .btn {
-  height: 54px;
-  border: none !important;
-  background: #fff;
-  color: #6fddf6;
-  font-size: 16px;
-  text-transform: uppercase;
-  font-weight: 400;
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
 #fh5co-blog {
   padding: 5em 0;
 }
@@ -1095,7 +1059,6 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-consult .choose {
   width: 50%;
   padding: 4em;
-  background: #6fddf6;
 }
 @media screen and (max-width: 768px) {
   #fh5co-consult .choose {
