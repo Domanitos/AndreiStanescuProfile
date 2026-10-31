@@ -612,6 +612,11 @@ h1, h2, h3, h4, h5, h6, figure {
   margin-top: 40px;
 }
 
+#fh5co-about .col-md-8 p,
+.fh5co-blog .blog-text p {
+  text-align: justify;
+}
+
 .timeline-body > p + p {
   margin-top: 5px;
 }
