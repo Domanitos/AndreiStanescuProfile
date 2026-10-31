@@ -853,6 +853,18 @@ h1, h2, h3, h4, h5, h6, figure {
 	}
 }
 
+#fh5co-blog{
+	.btn-primary{
+		background: $brand-white;
+		color: $brand-primary;
+		border: 2px solid $brand-white;
+		&:hover, &:focus, &:active{
+			background: darken($brand-white, 10%)!important;
+			border-color: darken($brand-white, 10%)!important;
+		}
+	}
+}
+
 
 //PRICING
 

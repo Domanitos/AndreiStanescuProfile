@@ -839,6 +839,18 @@ h1, h2, h3, h4, h5, h6, figure {
   padding-right: 50px;
 }
 
+#fh5co-blog .btn-primary {
+  background: #fff;
+  color: #6fddf6;
+  border: 2px solid #fff;
+}
+#fh5co-blog .btn-primary:hover,
+#fh5co-blog .btn-primary:focus,
+#fh5co-blog .btn-primary:active {
+  background: #e6e6e6 !important;
+  border-color: #e6e6e6 !important;
+}
+
 .fh5co-blog {
   width: 100%;
   float: left;
