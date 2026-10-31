@@ -376,6 +376,9 @@ h1, h2, h3, h4, h5, h6, figure {
 		h2{
 			color: $brand-white !important;
 		}
+		p{
+			color: rgba($brand-white, .9);
+		}
 	}
 }
 
@@ -627,6 +630,18 @@ h1, h2, h3, h4, h5, h6, figure {
     margin-bottom: 0;
 }
 
+.timeline-body > p {
+    text-align: justify;
+}
+
+.article-body p {
+    text-align: justify;
+}
+
+.article-body h3 {
+    margin-top: 40px;
+}
+
 .timeline-body > p + p {
   margin-top: 5px;
 }
@@ -835,6 +850,43 @@ h1, h2, h3, h4, h5, h6, figure {
 		font-weight: 400;
 		padding-left: 50px;
 		padding-right: 50px;
+	}
+}
+
+#fh5co-blog{
+	padding: 5em 0;
+	@media screen and (max-width: $screen-sm) {
+		padding: 3em 0;
+	}
+	.fh5co-heading{
+		margin-bottom: 2.5em;
+	}
+	.row{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.fh5co-blog{
+		margin-bottom: 10px;
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		.blog-text{
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			.stuff{
+				margin-top: auto;
+			}
+		}
+	}
+	.btn-primary{
+		background: $brand-white;
+		color: $brand-primary;
+		border: 2px solid $brand-white;
+		&:hover, &:focus, &:active{
+			background: darken($brand-white, 10%)!important;
+			border-color: darken($brand-white, 10%)!important;
+		}
 	}
 }
 

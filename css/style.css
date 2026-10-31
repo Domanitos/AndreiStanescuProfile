@@ -313,6 +313,9 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-bg-dark .fh5co-heading h2 {
   color: #fff !important;
 }
+.fh5co-bg-dark .fh5co-heading p {
+  color: rgba(255, 255, 255, 0.9);
+}
 
 .info {
   margin: 0;
@@ -597,6 +600,18 @@ h1, h2, h3, h4, h5, h6, figure {
   margin-bottom: 0;
 }
 
+.timeline-body > p {
+  text-align: justify;
+}
+
+.article-body p {
+  text-align: justify;
+}
+
+.article-body h3 {
+  margin-top: 40px;
+}
+
 .timeline-body > p + p {
   margin-top: 5px;
 }
@@ -822,6 +837,48 @@ h1, h2, h3, h4, h5, h6, figure {
   font-weight: 400;
   padding-left: 50px;
   padding-right: 50px;
+}
+
+#fh5co-blog {
+  padding: 5em 0;
+}
+@media screen and (max-width: 768px) {
+  #fh5co-blog {
+    padding: 3em 0;
+  }
+}
+#fh5co-blog .fh5co-heading {
+  margin-bottom: 2.5em;
+}
+#fh5co-blog .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+#fh5co-blog .fh5co-blog {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+#fh5co-blog .fh5co-blog .blog-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+#fh5co-blog .fh5co-blog .blog-text .stuff {
+  margin-top: auto;
+}
+
+#fh5co-blog .btn-primary {
+  background: #fff;
+  color: #6fddf6;
+  border: 2px solid #fff;
+}
+#fh5co-blog .btn-primary:hover,
+#fh5co-blog .btn-primary:focus,
+#fh5co-blog .btn-primary:active {
+  background: #e6e6e6 !important;
+  border-color: #e6e6e6 !important;
 }
 
 .fh5co-blog {
