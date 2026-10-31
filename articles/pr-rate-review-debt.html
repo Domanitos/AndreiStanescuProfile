@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Doubling PR Rate Without Doubling Review Debt - Andrei Stanescu</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="We doubled our PR rate with AI assistance. Here's how we kept code review from becoming the bottleneck, or a rubber stamp." />
+
+	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="../css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="../css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="../css/bootstrap.css">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="../css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="../js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="../js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+
+	<div class="fh5co-loader"></div>
+
+	<div id="page">
+
+	<div id="fh5co-blog">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>Doubling PR Rate Without Doubling Review Debt</h2>
+					<span class="company">Oct 31, 2026 &middot; Andrei Stanescu &middot; 5 min read</span>
+				</div>
+			</div>
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 article-body">
+					<p>A year into our AI-assisted workflows, my team&rsquo;s PR rate is roughly double what it was. That number gets attention, and other engineering managers usually ask me the same question: didn&rsquo;t code review become the bottleneck? The honest answer is that it would have, very quickly, if we hadn&rsquo;t treated review capacity as a first-class constraint from day one. Here is what that looked like in practice.</p>
+
+					<h3>Review is the real production system</h3>
+					<p>Review capacity is mostly fixed. Tools can help, but sustained human attention doesn&rsquo;t double because your output did. If review demand doubles and nothing else changes, you get one of two failure modes: the review queue grows and lead time balloons, or review quality quietly degrades into rubber stamping. The second one is worse precisely because it is silent. Nothing on a dashboard tells you that approvals stopped meaning anything.</p>
+
+					<h3>Shrink the demand, not the standard</h3>
+					<p>The first lever was reducing how much review each PR actually needs. AI tooling makes enormous diffs tempting: it will happily generate an entire feature in one go, and the diff looks impressive right up until someone has to evaluate it. We went the other way. We cap the diff, not the velocity: three clean, reviewable PRs beat one mega-diff that reviews itself into approval.</p>
+					<p>We also moved the mechanical part of review out of human hands entirely. SonarQube and Snyk gates catch style, duplication, and known vulnerability patterns before a human ever looks at the change. That leaves the human review for what humans are actually for: intent, design, and consequences the machine can&rsquo;t see. Reviewers are explicitly instructed that &ldquo;looks plausible&rdquo; is not an approving verdict, and my standing rule applies to AI-generated code more than anywhere: if you can&rsquo;t explain it, you can&rsquo;t merge it.</p>
+
+					<h3>Make review a first-class activity</h3>
+					<p>The second lever was cultural. Review is not something you do after your real work; it is the work. We plan it into sprint capacity the same way we plan feature tasks, we hold ourselves to a review turnaround of no more than one working day, and small diffs make that genuinely achievable in fifteen focused minutes rather than a half-hour skim at the end of the day. Big or risky changes get deliberate treatment: a named senior reviewer, or a pair review, so the hardest calls don&rsquo;t land on whoever happened to open the queue first.</p>
+
+					<h3>Watch the metrics that would tell you that you&rsquo;re wrong</h3>
+					<p>Throughput alone is a vanity metric in this story. The DORA numbers are what convinced me the setup is healthy: lead time for changes came down rather than up despite the volume, and our change failure rate stayed flat while the PR rate doubled. We also track two softer canaries. Review turnaround, because a growing queue shows up there weeks before it shows up in delivery. And comment depth, because rubber stamping shows up as suspiciously quiet approvals long before it shows up in incidents.</p>
+
+					<h3>What I&rsquo;d tell my past self</h3>
+					<p>&bull; The bottleneck moves when you adopt AI tooling. Plan for review load before the adoption, not after the queue hurts.<br />
+					&bull; Write the review standards down early, while it still feels unnecessary. Culture is much easier to set than to reset.<br />
+					&bull; Be careful with AI-generated review summaries. They can speed up triage, but a reviewer reading a summary instead of a diff is exactly the failure mode you adopted the tooling to avoid.</p>
+
+					<p>Doubling the PR rate was never the goal; shipping more value at the same quality was. The PR rate is just the number people notice. The part I&rsquo;m actually proud of is that a year in, an approved PR still means a human understood it, challenged it, and signed their name on it.</p>
+
+					<p><a href="../articles.html">&larr; Back to all articles</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="fh5co-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<p>&copy; 2026 Andrei Stanescu. All Rights Reserved.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
+	</div>
+
+	<!-- jQuery -->
+	<script src="../js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="../js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="../js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="../js/jquery.waypoints.min.js"></script>
+	<!-- Stellar Parallax -->
+	<script src="../js/jquery.stellar.min.js"></script>
+	<!-- Easy PieChart -->
+	<script src="../js/jquery.easypiechart.min.js"></script>
+
+	<!-- Main -->
+	<script src="../js/main.js"></script>
+
+	</body>
+</html>
