@@ -350,6 +350,7 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-about,
 #fh5co-resume,
 #fh5co-skills,
+#fh5co-recommendations,
 #fh5co-started,
 #fh5co-work,
 #fh5co-blog,
@@ -645,6 +646,38 @@ h1, h2, h3, h4, h5, h6, figure {
 #fh5co-about .col-md-8 p,
 .fh5co-blog .blog-text p {
     text-align: justify;
+}
+
+/* ---------- Recommendations ---------- */
+.rec {
+	background: #fff;
+	padding: 20px;
+	margin-bottom: 20px;
+	float: left;
+	width: 100%;
+	box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.06);
+	-webkit-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+	border-left: 3px solid $brand-primary;
+}
+.rec .rec-text {
+	font-size: 15px;
+	line-height: 1.6;
+	color: #4d4d4d;
+	margin-bottom: 12px;
+	text-align: justify;
+}
+.rec .rec-author {
+	font-weight: 700;
+	color: $brand-black;
+	margin: 0;
+	font-size: 15px;
+}
+.rec .rec-role {
+	font-weight: 400;
+	color: #bfbfbf;
+	font-size: 13px;
 }
 
 .timeline-body > p + p {
