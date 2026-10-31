@@ -737,6 +737,9 @@ h1, h2, h3, h4, h5, h6, figure {
 .progress-wrap h3 .value-right {
   float: right;
 }
+#fh5co-skills .progress-wrap h3 {
+  color: #fff;
+}
 
 .progress {
   width: 100%;
