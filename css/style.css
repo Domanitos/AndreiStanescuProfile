@@ -621,8 +621,8 @@ h1, h2, h3, h4, h5, h6, figure {
 
 .rec {
   background: #fff;
-  padding: 20px;
-  margin-bottom: 20px;
+  padding: 15px;
+  margin-bottom: 15px;
   float: left;
   width: 100%;
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.06);
@@ -635,7 +635,7 @@ h1, h2, h3, h4, h5, h6, figure {
   font-size: 15px;
   line-height: 1.6;
   color: #4d4d4d;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   text-align: justify;
 }
 .rec .rec-author {
