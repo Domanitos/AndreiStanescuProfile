@@ -854,6 +854,16 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #fh5co-blog{
+	padding: 5em 0;
+	@media screen and (max-width: $screen-sm) {
+		padding: 3em 0;
+	}
+	.fh5co-heading{
+		margin-bottom: 2.5em;
+	}
+	.fh5co-blog{
+		margin-bottom: 10px;
+	}
 	.btn-primary{
 		background: $brand-white;
 		color: $brand-primary;
