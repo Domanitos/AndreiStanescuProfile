@@ -601,6 +601,14 @@ h1, h2, h3, h4, h5, h6, figure {
   text-align: justify;
 }
 
+.article-body p {
+  text-align: justify;
+}
+
+.article-body h3 {
+  margin-top: 40px;
+}
+
 .timeline-body > p + p {
   margin-top: 5px;
 }
